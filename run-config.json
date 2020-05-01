@@ -1,0 +1,8 @@
+{
+    "all":[""],
+    "smoke":[""],
+    "custom":[""],
+    "manual":["manual/*.js"],
+    "pvt":[""],
+    "test":["manual/signup-page.js"]
+    }

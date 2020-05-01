@@ -1,0 +1,12 @@
+{  
+    "booking":{
+        "address":"123 Nerang Street, Southport QLD, Australia",
+        "comments":"test"
+    },
+    "candidate":{
+        "firstname" : "rehan",
+        "lastname" : "momin",
+        "phone" : "234567654",
+        "password" : "Jarvis@2020"
+    }
+}

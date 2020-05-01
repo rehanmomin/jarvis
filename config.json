@@ -1,0 +1,8 @@
+{
+  "QA1":{
+    "sdurl":"https://app.getjarvis.com.au/sign-up"    
+  },
+  "PRD":{
+    "sdurl":"https://app.getjarvis.com.au/sign-up"
+  }
+}
