@@ -21,11 +21,11 @@ npm install
 
 To execute the test cases, below is the command. This command takes browser name, environment name, test-suite name, concurrency of execution, release id as arguments
 ```
-inside the directoty:
+inside the project directory:
 
 node test-runner.js --browser=chrome --environment=QA1 --suite=test --concurrency=1 
 ```
 - browser - values['chrome', 'chrome:headless', 'firefox', 'firefox:headless', 'ie', 'all']
-- enviroment - values['QA1','QA2' ... 'PRD']
-- suite - values['smoke','all', ... 'custom']
+- enviroment - values['QA1' ... 'PRD']
+- suite - values['smoke','all','test' ... 'custom']
 - concurrency - values[1 to 5]
