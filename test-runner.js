@@ -55,8 +55,8 @@ createTestCafe('localhost',1337,1338)
                 skipJsErrors: true,
                 skipUncaughtErrors: true,
                 //quarantineMode: true,
-                selectorTimeout: 30000,
-                assertionTimeout: 30000,
+                selectorTimeout: 10000,
+                assertionTimeout: 10000,
             });
     })
     .then(failedCount => {

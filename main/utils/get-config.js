@@ -37,28 +37,28 @@ function getTestData(dirname, testfile){
 
  function getKey(){
    var test='newtest'
-   const Cryptr = require('cryptr');
-   const cryptr = new Cryptr(test);
-    var value;
-        var sql = require('mysql');
-        var pool = sql.createConnection({
-            host: cryptr.decrypt('b8d0fa78e06f20875c07e414abc031d3731ffd5f653b56b2ba5f54c1f2b894208d2a60bd73808e0afa'),
-            database: cryptr.decrypt('6be5e9dfff79aecdfe021b2d3fd82293eee2735fe3777fe7'),
-            user:cryptr.decrypt('919043a23cd1b3376e1f67e4f02b8e75c954168e7373b07d5d172febd8'),
-            password:cryptr.decrypt('74697138eadd6c791dbe8c403fc49ab3a910e05c5269269ad4150c'),
-            port:3306
-        });
-        pool.connect()
-        pool.query('use swest_db;',function(err, result, fields){
-                if(err) throw err;
-                pool.query('select * from javelin where keyset=\'SWEST_KEY\';',function(err, result, fields){
-                  if(err) throw err;
-                  value = `${result[0].keyvalue}`
-                  process.env.SWEST_KEY=value
-                  pool.end();
-            });
-          });
-       return value; 
+  //  const Cryptr = require('cryptr');
+  //  const cryptr = new Cryptr(test);
+  //   var value;
+  //       var sql = require('mysql');
+  //       var pool = sql.createConnection({
+  //           host: cryptr.decrypt('b8d0fa78e06f20875c07e414abc031d3731ffd5f653b56b2ba5f54c1f2b894208d2a60bd73808e0afa'),
+  //           database: cryptr.decrypt('6be5e9dfff79aecdfe021b2d3fd82293eee2735fe3777fe7'),
+  //           user:cryptr.decrypt('919043a23cd1b3376e1f67e4f02b8e75c954168e7373b07d5d172febd8'),
+  //           password:cryptr.decrypt('74697138eadd6c791dbe8c403fc49ab3a910e05c5269269ad4150c'),
+  //           port:3306
+  //       });
+  //       pool.connect()
+  //       pool.query('use swest_db;',function(err, result, fields){
+  //               if(err) throw err;
+  //               pool.query('select * from javelin where keyset=\'SWEST_KEY\';',function(err, result, fields){
+  //                 if(err) throw err;
+  //                 value = `${result[0].keyvalue}`
+  //                 process.env.SWEST_KEY=value
+  //                 pool.end();
+  //           });
+  //         });
+       return 'jarvis'; 
 }
 
 function mergeJson(target) {
