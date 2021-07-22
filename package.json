@@ -22,7 +22,7 @@
     "testcafe": "^1.8.4",
     "testcafe-reporter-html": "^1.4.6",
     "utf8": "^3.0.0",
-    "xlsx": "^0.15.6",
+    "xlsx": "^0.17.0",
     "xml-parse-from-string": "^1.0.1",
     "xml2js": "^0.4.23",
     "xml2js-xpath": "^0.10.0",
