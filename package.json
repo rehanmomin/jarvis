@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "aws-sdk": "^2.653.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^3.0.8",
     "change-case": "^3.1.0",
     "cryptr": "^4.0.2",
